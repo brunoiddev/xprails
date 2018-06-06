@@ -50,5 +50,4 @@ test:
 production:
   <<: *default
   database: xprails_production
-  username: xprails
-  password: <%= ENV['XPRAILS_DATABASE_PASSWORD'] %>
+  

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans:200');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+
+/* 	###########  HOME  #############  */
+
+.topbar-bg {
+	z-index: 4;
+	width: 100%;
+	position: fixed;
+	height: 60px;
+	background-color: black;
+	opacity: 0;
+}
+
+.topbar {
+	z-index: 5;
+	width: 100%;
+	position: fixed;
+}
+
+.topbar .logo {
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+}
+
+.top-flex {
+	display: flex;
+	justify-content: space-between;
+	width: 97.5%;
+	margin: 0 auto;
+}
+
+.top-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-icons img {
+	margin: 0 10px;
+	height: 25px;
+	width: auto;
+}
+.user-icon {
+	display: none;
+}
+
+
+
+.banners {
+	width: 100wh;
+	height: 50vh;
+	position: relative;
+}
+.banners span {
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 3rem;
+	z-index: 2;
+}
+.banner-mascara {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.banner-1 {
+	display: flex;
+	background-image: url(asset_path('hero.jpg'));
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#home-selecao {
+	text-align: center;
+}
+
+#home-selecao img {
+	height: 20px;
+	width: auto;
+	margin: 50px 0 30px 0;
+}
+
+.home-selecao-texto {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 3rem;
+	font-weight: 100;
+	/*color: #A4A6A9;*/
+	color: #A2A4A7;
+	letter-spacing: 0px;
+	margin-top: 70px;
+
+}
+
+.home-selecao-encontre {
+	color: #A2A4A7;
+	font-family: Roboto;
+	margin-bottom: 50px;
+}
+
+#home-selecao button {
+	width: 250px;
+	padding: 10px;
+	margin: 50px 0;
+	text-align: center;
+	background-color: #D11C5C;
+	border: none;
+	color: #FFF;
+	font-size: 1.2rem;
+	font-weight: 100;
+}
+
+
+
+.mapa-site {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	margin-top: 70px;
+	padding: 50px 0;
+	display: none;
+}
+.mapa-site-col .mapa-site-a-dark {
+	text-decoration: none;
+	color: #808080;
+}
+.mapa-site-col .mapa-site-a {
+	text-decoration: none;
+	color: #BFBFBF;
+}
+
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: space-between;
+	height: 20px;
+	width: 80px;
+}
+.footer-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	flex-basis: 20px;
+}
+.footer-insta-icon { background-image: url(asset_path('icon/instagram.png')); }
+.footer-insta-icon:hover { background-image: url(asset_path('icon/instagram-rosa.png')); }
+.footer-vimeo-icon { background-image: url(asset_path('icon/vimeo.png')); }
+.footer-vimeo-icon:hover { background-image: url(asset_path('icon/vimeo-rosa.png')); }
+.footer-face-icon { background-image: url(asset_path('icon/facebook.png')); }
+.footer-face-icon:hover { background-image: url(asset_path('icon/facebook-rosa.png')); }
+
+.footer-copyright {
+	font-family: Roboto;
+	font-size: .6rem;
+	color: #A2A4A7;
+}
+
+
+
+
+@media screen and (min-width: 640px) {
+	html, body {
+		font-size: 16px;
+	}
+	.user-icon { display: inline-block; }
+	.topbar-bg {
+		height: 80px;
+	}
+
+	.topbar .logo {
+		width: 50px;
+		height: 50px;
+		margin: 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	html, body {
+		font-size: 18px;
+	}
+	.mapa-site {
+		display:flex;
+	}
+}
