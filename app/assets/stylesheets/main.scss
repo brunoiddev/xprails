@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
 }
 
 .topbar {
-	z-index: 5;
+	z-index: 30;
 	width: 100%;
 	position: fixed;
 }
@@ -42,6 +42,11 @@ h1, h2, h3, h4 {
 	width: 40px;
 	height: 40px;
 	margin: 10px;
+	z-index: 30;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .top-flex {

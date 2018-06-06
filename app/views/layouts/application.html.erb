@@ -14,18 +14,50 @@
   </head>
 
   <body>
+    <!-- nav mobile -->
+    <div id='sidenav'>
+      <div class='sidenav-container'>
+        <a href="#" >início</a>
+        <hr/>
+        <a href="#">olá</a>
+        <!--<a href="#" onclick="loadView('ajax', 'experiencias-view')">experiências</a>-->
+        <a href="#">experiências</a>
+        <a href="#">ofereça&nbsp;uma&nbsp;experiência</a>
+        <a href="#">corporativo</a>
+        <a href="#">store</a>
+        <a href="#">contato</a>
+        <a href="#">admin</a>
+        <hr/>
+        <div class='sidenav-spacer'>
+              <a href="#">sign&nbsp;in</a>
+        </div>
+        <div class='sidenav-spacer'>
+          <a href="#">carrinho</a>
+          <!-- <img src='<?=IMGPATH?>/icon/carrinho.png' alt=''/> -->
+        </div>
+        <hr/>
+        <div class='sidenav-spacer'>
+            <a href="#">language</a>
+            <a href="#">pt&nbsp;</a>
+         </div>   
+      </div>
+    </div>
+
+
     <div class="topbar-bg"></div>
     <div class="topbar">
       <div class='top-flex'>
-        <div class='top-logo'><%=image_tag("seta.png", :class => "logo")%></div>
+        <div class='top-logo'><%=image_tag("seta.png", :id =>'seta', :class => "logo", :onClick => "openNav()")%></div>
         <div class='top-icons'>
           <%=image_tag("icon/cart.png")%>
           <%=image_tag("icon/user.png", :class => "user-icon")%>
         </div>
       </div>
     </div>
+    <div id='content'>
 
-    <%= yield %>
+      <%= yield %>
 
+    </div>
   </body>
 </html>
