@@ -13,7 +13,7 @@
     
   </head>
 
-  <body>
+  <body id="body">
     <!-- nav mobile -->
     <div id='sidenav'>
       <div class='sidenav-container'>
@@ -43,18 +43,18 @@
       </div>
     </div>
 
-
-    <div class="topbar-bg"></div>
-    <div class="topbar">
-      <div class='top-flex'>
-        <div class='top-logo'><%=image_tag("seta.png", :id =>'seta', :class => "logo", :onClick => "openNav()")%></div>
-        <div class='top-icons'>
-          <%=image_tag("icon/cart.png")%>
-          <%=image_tag("icon/user.png", :class => "user-icon")%>
+    <div id='content'>
+      <div class="topbar-bg"></div>
+      <div class="topbar">
+        <div class='top-flex'>
+          <div class='top-logo'><%=image_tag("seta.png", :id =>'seta', :class => "logo", :onClick => "openNav()")%></div>
+          <div class='top-icons'>
+            <%=image_tag("icon/cart.png")%>
+            <%=image_tag("icon/user.png", :class => "user-icon")%>
+          </div>
         </div>
       </div>
-    </div>
-    <div id='content'>
+    
 
       <%= yield %>
 
