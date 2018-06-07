@@ -14,11 +14,12 @@ function closeNav() {
 	document.getElementById("sidenav").style.width = "0";
 }
 
-window.onload = function() {
+$(document).on('turbolinks:load', function() {
     document.getElementById("content").onclick = function() {
         if (document.getElementById("sidenav").offsetWidth =="250") {
         	document.getElementById("sidenav").style.width = "0";
 			document.getElementById("seta").style.webkitTransform = 'rotate(0deg)';
     	}
     }
-}
+});
+
